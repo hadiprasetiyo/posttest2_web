@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <h2 style=color:#24f8c7 >Selamat Datang : <span class="typed" style=color:24f8c7></span></h2>
+        <nav>
+            <a href="home.html" class="logo">Astronomy</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="form.html">Form</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text_box">
+            <h2>ASTRONOMY</h2>
+            <p id="headtext">explore the universe</p>
+            <p>"Di suatu tempat, sesuatu yang luar biasa sedang menunggu untuk diketahui."</p>
+        </div>
+    </section> 
+    <section class="footer">
+        <p>Design by <a href="home.html">hadiiyok</a></p>
+        <p>copyrigth &copy;2023 <a href="home.html">Astronomy.</a></p>
+    </section>
+    
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+    // ambil data user yang sedang login
+    const users = localStorage.getItem("nama_login");
+    // auto typing
+    const typed = document.querySelector(".typed");
+        if (typed) {
+        let typed_strings = users;
+        typed_strings = typed_strings.split(",");
+        new Typed(".typed", {
+            strings: typed_strings,
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 75,
+        });
+    }
+    </script>
+</body>
+</html>

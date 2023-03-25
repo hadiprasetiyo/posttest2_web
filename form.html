@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="Sub-header">
+        <nav>
+            <a href="home.html" class="logo">Astronomy</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="form.html">Form</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>form</h1>
+    </section>
+    <section class="contact">
+            <div class="form"><br>
+                <h2>Formulir Pendaftaran Bootcamp</h2><br> 
+                <form>
+                    <label for="nama">Nama Lengkap:</label><br>
+                    <input type="text" id="nama" name="nama"><br>
+            
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+            
+                    <label for="alamat">Alamat:</label><br>
+                    <textarea id="alamat" name="alamat" rows="5px" cols="85px"></textarea><br>
+            
+                    <label for="jenjang">Jenjang:</label><br>
+                    <select id="jenjang" name="jenjang">
+                        <option value="SD">SD</option>
+                        <option value="SMP">SMP</option>
+                        <option value="SMA">SMA</option>
+                    </select><br>
+
+                    <div class="order">
+                        <span>Jenis Kelamin : </span>
+                        <input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="Laki - Laki" />Laki - Laki
+                        <input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="Perempuan" />Perempuan
+                    </div>
+
+                    <div class="form-check">
+                        <input class="" type="checkbox" id="checkbox" required>
+                        <label class="" for="checkbox" style="color: rgb(0, 0, 0);">I confirm that all data are correct</label>
+                    </div>
+
+                    <input type="submit" value="Daftar" id="kirim">
+                </form>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <p>Design by <a href="home.html">hadiiyok</a></p>
+        <p>copyrigth &copy;2023 <a href="home.html">Astronomy.</a></p>
+    </section>
+    <script src="js/form.js"></script>
+</body>
+</html>
